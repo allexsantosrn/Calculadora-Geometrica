@@ -53,6 +53,16 @@ func main() {
 			fmt.Println("Perímetro do retângulo: ", perimetro)
 			fmt.Print("\n")
 
+		case 3:
+			var lado float32
+			fmt.Print("Digite o tamanho do lado do quadrado: ")
+			fmt.Scanln(&lado)
+			area := quadradoArea(lado)
+			perimetro := quadradoPerimetro(lado)
+			fmt.Println("Área do quadrado: ", area)
+			fmt.Println("Perímetro do quadrado: ", perimetro)
+			fmt.Print("\n")
+
 		default:
 			fmt.Println("Opção inválida. Selecione uma das opções disponíveis!")
 			fmt.Print("\n")
@@ -76,4 +86,12 @@ func retanguloArea(base float32, altura float32) float32 {
 
 func retanguloPerimetro(base float32, altura float32) float32 {
 	return base*2 + altura*2
+}
+
+func quadradoArea(lado float32) float32 {
+	return (lado * lado)
+}
+
+func quadradoPerimetro(lado float32) float32 {
+	return lado * 4
 }
