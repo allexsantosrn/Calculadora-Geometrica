@@ -177,7 +177,7 @@ func piramideArea(areabase float32, arealateral float32) float32 {
 }
 
 func piramideVolume(areabase float32, altura float32) float32 {
-	return 1 / 3 * areabase * altura
+	return (areabase * altura) / 3
 }
 
 func cuboArea(aresta float32) float32 {
@@ -201,5 +201,5 @@ func esferaArea(raio float32) float32 {
 }
 
 func esferaVolume(raio float32) float32 {
-	return 4 / 3 * PI * raio * raio * raio
+	return 4 * (PI * raio * raio * raio) / 3
 }
