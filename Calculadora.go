@@ -6,6 +6,8 @@ import (
 
 var option int
 
+const PI = 3.1415
+
 func main() {
 
 	for {
@@ -63,6 +65,56 @@ func main() {
 			fmt.Println("Perímetro do quadrado: ", perimetro)
 			fmt.Print("\n")
 
+		case 4:
+			var raio float32
+			fmt.Print("Digite o tamanho do raio do círculo: ")
+			fmt.Scanln(&raio)
+			area := circuloArea(raio)
+			perimetro := circuloPerimetro(raio)
+			fmt.Println("Área do círculo: ", area)
+			fmt.Println("Perímetro do círculo: ", perimetro)
+			fmt.Print("\n")
+
+		case 5:
+			var raio float32
+			fmt.Print("Digite o tamanho do raio do círculo: ")
+			fmt.Scanln(&raio)
+			area := circuloArea(raio)
+			perimetro := circuloPerimetro(raio)
+			fmt.Println("Área do círculo: ", area)
+			fmt.Println("Perímetro do círculo: ", perimetro)
+			fmt.Print("\n")
+
+		case 6:
+			var raio float32
+			fmt.Print("Digite o tamanho do raio do círculo: ")
+			fmt.Scanln(&raio)
+			area := circuloArea(raio)
+			perimetro := circuloPerimetro(raio)
+			fmt.Println("Área do círculo: ", area)
+			fmt.Println("Perímetro do círculo: ", perimetro)
+			fmt.Print("\n")
+
+		case 7:
+			var raio float32
+			fmt.Print("Digite o tamanho do raio do círculo: ")
+			fmt.Scanln(&raio)
+			area := circuloArea(raio)
+			perimetro := circuloPerimetro(raio)
+			fmt.Println("Área do círculo: ", area)
+			fmt.Println("Perímetro do círculo: ", perimetro)
+			fmt.Print("\n")
+
+		case 8:
+			var raio float32
+			fmt.Print("Digite o tamanho do raio do círculo: ")
+			fmt.Scanln(&raio)
+			area := circuloArea(raio)
+			perimetro := circuloPerimetro(raio)
+			fmt.Println("Área do círculo: ", area)
+			fmt.Println("Perímetro do círculo: ", perimetro)
+			fmt.Print("\n")
+
 		default:
 			fmt.Println("Opção inválida. Selecione uma das opções disponíveis!")
 			fmt.Print("\n")
@@ -94,4 +146,12 @@ func quadradoArea(lado float32) float32 {
 
 func quadradoPerimetro(lado float32) float32 {
 	return lado * 4
+}
+
+func circuloArea(raio float32) float32 {
+	return PI * raio * raio
+}
+
+func circuloPerimetro(raio float32) float32 {
+	return 2 * PI * raio
 }
